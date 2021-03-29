@@ -1,10 +1,16 @@
 @import "variables";
+
+
+@for $i from 1 through 5{
+  .strip:nth-child(#{$i}) .strip_content{
+    animation-timing-function: ease-out; 
+  }
+}
 /* strips 1-5: nth-child 1-5 */
 .strip:nth-child(1) .strip_content {
   background-color: $color-1columna;
   animation-name: $animation-01part;
   animation-duration: $second1 - ($ms100 * 5);
-  animation-timing-function: $animation-transition;
 }
 @keyframes strip--u4rx9pe {
   from {
@@ -16,7 +22,6 @@
   background-color: $color-2columna;
   animation-name: $animation-02part;
   animation-duration: $second1 - ($ms100 * 2);
-  animation-timing-function: $animation-transition;
 }
 @keyframes strip--u4rx9pg {
   from {
@@ -28,7 +33,6 @@
   background-color: $color-3columna;
   animation-name: $animation-03part;
   animation-duration: $second1 - ($ms100 * 3);
-  animation-timing-function: $animation-transition;
 }
 @keyframes strip--u4rx9q8 {
   from {
@@ -40,7 +44,6 @@
   background-color: $color-4columna;
   animation-name: $animation-04part;
   animation-duration: $second1;
-  animation-timing-function: $animation-transition;
 }
 @keyframes strip--u4rx9qn {
   from {
@@ -52,7 +55,6 @@
   background-color: $color-5columna;
   animation-name: $animation-05part;
   animation-duration: ($second1 + $ms100);
-  animation-timing-function: $animation-transition;
 }
 @keyframes strip--u4rx9r0 {
   from {
