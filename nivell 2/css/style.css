@@ -71,46 +71,51 @@ body {
   margin: 10px 0 0 0;
 }
 
+h1 {
+  font-size: 3.5vw;
+  font-weight: 300;
+  color: white;
+  font-family: "Lato";
+}
+
 /* strips */
 /*--COLORS--*/
 /*--ANIMATION--*/
 .strips {
   height: 100vh;
+  text-align: center;
+  display: flex;
   width: 100vw;
   overflow: hidden;
-  text-align: center;
-  display: flex;
   cursor: pointer;
 }
-
 .strips .strip {
-  position: relative;
-  width: 19.9vw;
-  margin: 0.1vw;
   height: 100vh;
-  display: flex;
   text-align: center;
+  display: flex;
+  width: 19.9vw;
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin: 0.1vw;
 }
-
 .strips .strip .strip_content {
+  height: 100vh;
+  text-align: center;
   display: flex;
+  width: 100vw;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
 }
 
 /* before */
 .strips .strip_content:before {
-  content: "";
-  display: flex;
   align-items: center;
   justify-content: center;
+  content: "";
+  display: flex;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -128,11 +133,4 @@ body {
 .strips .strip_content:hover:before {
   transform: skew(0deg) scaleX(2) translate(0, 0);
   opacity: 0.2;
-}
-
-h1 {
-  font-size: 3.5vw;
-  font-weight: 300;
-  color: white;
-  font-family: "Lato";
 }
